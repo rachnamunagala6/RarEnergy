@@ -25,7 +25,7 @@ header {
 
   }
   header.about-header{
-    background-image: url("Images/about-Header.jpg"); /* Replace with the path to your image */
+    background-image: url("Images/about-header.jpg"); /* Replace with the path to your image */
   }
   header.services-header {
     background-image: url("Images/Services-header.jpg"); /* Replace with the path to your image */
