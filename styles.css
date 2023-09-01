@@ -1,0 +1,530 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #fff;
+}
+header {
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 75px;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 50px;
+    margin: 0;
+  } 
+  header.projects-header{
+    background-image: url("Images/Projects-Header.jpeg"); /* Replace with the path to your image */
+
+  }
+  header.contact-header{
+    background-image: url("Images/Contact-Header.jpeg"); /* Replace with the path to your image */
+
+  }
+  header.about-header{
+    background-image: url("Images/about-Header.jpg"); /* Replace with the path to your image */
+  }
+  header.services-header {
+    background-image: url("Images/Services-header.jpg"); /* Replace with the path to your image */
+  }
+
+h1 {
+    font-size: 25px;
+    margin: 0;
+}
+nav {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    align-items: center; 
+  }
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+nav li {
+    margin-right: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    padding: 8px 12px;
+    border-radius: 4px;
+    display:flex;
+    align-items:center;
+}
+nav a:hover {
+    background-color: #0b9949;
+    color: #fff;
+}
+nav a.active {
+    background-color: #333;
+    color: #fff;
+}
+nav img {
+    width: 175px; 
+    height: auto;
+    margin-right: 10px;
+  }
+  
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+ul {
+    color: #333;
+}
+
+
+footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 10px;
+    z-index: 1; /* Add a higher z-index value */
+  }
+  .main-content {
+    margin-bottom: 60px; /* Adjust margin-bottom to create space above the footer */
+  }
+  
+/*LOGO*/
+header img {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height:auto;
+    top: 20%;
+    transform: translateY(-20%);
+  }
+  
+/* background Pic... */
+.hero-image {
+    position: relative;
+    height: 100vh;
+    background-image: url("Images/renewable-energy.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+}
+.hero-image h1 {
+    font-size: 75px;
+    margin: 0;
+}
+.scroll-down-icon {
+  position: absolute;
+  bottom: 50px; /* Adjust the distance from the bottom as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  height: 50px;
+  background-image: url("Images/whiteDown.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  z-index: 10; /* Increase the z-index to ensure the icon is above other elements */
+}
+html {
+  scroll-behavior: smooth;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/* Drop-Down for Nav Bar Section */
+/*
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/* Home Section */
+.Home-content {
+    display: flex;
+    align-items: center;
+}
+
+.Home-image {
+    width: 350px; /* Adjust the width as desired */
+    height: auto;
+    margin-right: 100px; /* Added margin for spacing */
+    margin-left: 150px;
+    margin-top: 100px;
+}
+.Home-text{
+    text-align: left;
+}
+.Home-text h2 {
+    font-size: 30px;
+    text-align: left;
+    margin: 0 auto;
+    margin-left: 300px;
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+.Home-text p{
+    font-size: 25px;
+    margin-top: 0; /* Remove default margin */
+    margin-right: 150px;
+
+}
+.Home-text h1 {
+  margin-top: 100px;
+  font-size: 50px;
+  text-align: center;
+  color:#084F71;
+}
+.Home-text h3{
+  margin-left: 350px;
+  margin-right: 350px;
+  margin-bottom: 100px;
+  text-align: center;
+  color:#555;
+
+}
+
+#projects {
+  background-color: #f7f7f7;
+  padding: 30px 0;
+  display: flex;
+  align-items: flex-start;
+}
+
+.project-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 2; /* Adjust flex value to take up 2/3 of the space */
+}
+
+.project-item {
+  width: 200px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.project-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.project-info {
+  margin-top: 100px;
+  flex: 1; /* Adjust flex value to take up 1/3 of the space */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-info h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.project-info p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.see-all-button {
+  display: inline-block;
+  background-color:#084F71;
+  ;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.see-all-button:hover {
+  background-color: #0056b3;
+}
+
+
+#service{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #f7f7f7;
+  padding: 30px 0;
+  display: flex;
+  align-items: flex-start;
+}
+.service-gallery{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex: 2; /* Adjust flex value to take up 2/3 of the space */
+}
+.service-item {
+  width: 200px;
+  margin: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+.service-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.service-info {
+  margin-top: 100px;
+  flex: 1; /* Adjust flex value to take up 1/3 of the space */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-info h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.service-info p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+section {
+    margin-left: 50px;
+}
+section p{
+    margin-left: 25px;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .column {
+    position: relative;
+    width: 450px;
+    height: 350px;
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.3s;
+  }
+  
+  .column:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (last value) as desired */
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .column:hover:before {
+    opacity: 1;
+  }
+  
+  .column .label {
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    left: 10px;
+    color: #fff; /* Adjust the color as desired */
+    opacity: 0;
+    transition: opacity 0.3s;
+    padding:10px;
+  }
+  
+  .column:hover .label {
+    opacity: 1;
+  }
+  label p{
+    color: #fff;
+  }
+  
+
+/*~~~~~~~~~~~~~~~Contact Us Form~~~~~~~~~~~~~~~~*/
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #0b9949;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #096d3e;
+}
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+.message,
+.inquiry-form {
+  width: 45%;
+}
+.inquiry-section {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between; /* Add space between the two columns */
+  padding: 20px;
+}
+
+.inquiry-message {
+  flex: 1;
+  padding-right: 20px; /* Add spacing between the columns */
+}
+.inquiry-form {
+  flex:1;
+  padding-left: 20px;
+}
+
+.inquiry-form form {
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+/* Fine-tune form elements */
+.inquiry-form form label {
+  display: flex;
+  flex-direction: column;
+}
+
+.inquiry-form form input,
+.inquiry-form form textarea {
+    width: 100%;
+    max-width: 365px; /* Increase the width as needed */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Add padding to the right side of the input elements */
+.inquiry-form form input[type="text"],
+.inquiry-form form input[type="email"],
+.inquiry-form form textarea {
+    padding-right: 20px;
+}
+
+.inquiry-form form button {
+  max-width: 200px; /* Adjust the width of the button as needed */
+  align-self: flex-end; /* Align the button to the right */
+}
+
+/* Add media query for responsive layout if needed */
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column;
+  }
+
+  .message,
+  .inquiry-form {
+      width: 100%;
+  }
+  /* Style the modal container */
+#modalContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+}
